@@ -7,6 +7,6 @@
 
 import Foundation
 
-class TemporaryClass {
+open class TemporaryClass {
 
 }
