@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 public struct NewsApiSource: Codable, Identifiable {
 
     public var id = UUID()

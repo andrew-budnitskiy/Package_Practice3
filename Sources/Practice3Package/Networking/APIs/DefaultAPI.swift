@@ -8,7 +8,6 @@
 import Foundation
 import Alamofire
 
-
 open class DefaultAPI {
     /**
      Get news list
