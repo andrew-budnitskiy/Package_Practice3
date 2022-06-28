@@ -84,10 +84,10 @@ extension JSONValue: ExpressibleByArrayLiteral {
 }
 
 extension Optional {
-    func or(_ other: Wrapped) -> Wrapped {
+    func or(_ other: Optional) -> Optional {
         switch self {
         case .none: return other
-        case .some: return self!
+        case .some: return self
         }
     }
     func resolve(with error: @autoclosure () -> Error) throws -> Wrapped {
