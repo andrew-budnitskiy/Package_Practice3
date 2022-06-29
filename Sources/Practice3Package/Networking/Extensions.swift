@@ -7,32 +7,32 @@
 import Foundation
 import Alamofire
 
-public extension Bool: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+extension Bool: JSONEncodable {
+    public func encodeToJSON() -> Any { return self as Any }
 }
 
-public extension Float: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+extension Float: JSONEncodable {
+    public func encodeToJSON() -> Any { return self as Any }
 }
 
-public extension Int: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+extension Int: JSONEncodable {
+    public func encodeToJSON() -> Any { return self as Any }
 }
 
-public extension Int32: JSONEncodable {
-    func encodeToJSON() -> Any { return NSNumber(value: self as Int32) }
+extension Int32: JSONEncodable {
+    public func encodeToJSON() -> Any { return NSNumber(value: self as Int32) }
 }
 
-public extension Int64: JSONEncodable {
-    func encodeToJSON() -> Any { return NSNumber(value: self as Int64) }
+extension Int64: JSONEncodable {
+    public func encodeToJSON() -> Any { return NSNumber(value: self as Int64) }
 }
 
-public extension Double: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+extension Double: JSONEncodable {
+    public func encodeToJSON() -> Any { return self as Any }
 }
 
-public extension String: JSONEncodable {
-    func encodeToJSON() -> Any { return self as Any }
+extension String: JSONEncodable {
+    public func encodeToJSON() -> Any { return self as Any }
 }
 
 private func encodeIfPossible<T>(_ object: T) -> Any {
