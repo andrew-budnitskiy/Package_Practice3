@@ -7,31 +7,31 @@
 import Foundation
 import Alamofire
 
-extension Bool: JSONEncodable {
+public extension Bool: JSONEncodable {
     func encodeToJSON() -> Any { return self as Any }
 }
 
-extension Float: JSONEncodable {
+public extension Float: JSONEncodable {
     func encodeToJSON() -> Any { return self as Any }
 }
 
-extension Int: JSONEncodable {
+public extension Int: JSONEncodable {
     func encodeToJSON() -> Any { return self as Any }
 }
 
-extension Int32: JSONEncodable {
+public extension Int32: JSONEncodable {
     func encodeToJSON() -> Any { return NSNumber(value: self as Int32) }
 }
 
-extension Int64: JSONEncodable {
+public extension Int64: JSONEncodable {
     func encodeToJSON() -> Any { return NSNumber(value: self as Int64) }
 }
 
-extension Double: JSONEncodable {
+public extension Double: JSONEncodable {
     func encodeToJSON() -> Any { return self as Any }
 }
 
-extension String: JSONEncodable {
+public extension String: JSONEncodable {
     func encodeToJSON() -> Any { return self as Any }
 }
 
